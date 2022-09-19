@@ -1,0 +1,398 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd2d5c0697844d4907adca56ed8505ad11')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Home.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p2d5c0697844d4907adca56ed8505ad11">Home</SPAN></A><DIV id="d2d5c0697844d4907adca56ed8505ad11">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'dc005801fb5204aec9ae3033b63cb52e1')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='About_ETL.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pc005801fb5204aec9ae3033b63cb52e1">About ETL</SPAN></A><DIV id="dc005801fb5204aec9ae3033b63cb52e1">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Law_School_Consoritum.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p728efd4ec2ae4933bfc73964a5f9c29f">Law School Consoritum</SPAN></A><DIV id="td728efd4ec2ae4933bfc73964a5f9c29f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd3262a075d3354c5eac488b3c737f6cc2')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Carnegie_Recommendations.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3262a075d3354c5eac488b3c737f6cc2">Carnegie Recommendations</SPAN></A><DIV id="d3262a075d3354c5eac488b3c737f6cc2">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Intergrated_Curriculum.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p5d87eb3818be4e24aad90409b5883e9e">Intergrated Curriculum</SPAN></A><DIV id="td5d87eb3818be4e24aad90409b5883e9e">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Practical_Experience___Professionalism.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb671aca9f7e243bf8908b50fa2cfee6c">Practical Experience &amp; Professionalism</SPAN></A><DIV id="tdb671aca9f7e243bf8908b50fa2cfee6c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Better_use_of_2nd_and_3rd_years.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p22965244fa174e6a97bcdbdec8fb6a54">Better use of 2nd and 3rd years</SPAN></A><DIV id="td22965244fa174e6a97bcdbdec8fb6a54">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Support_Faculty_to_Work_Across_the_Curriculum.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p12333ca5d5b1477aa3028baf8b0cba66">Support Faculty to Work Across the Curriculum</SPAN></A><DIV id="td12333ca5d5b1477aa3028baf8b0cba66">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Weave_Knowledge_and_Skills_Together.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pfd98ca41979444f9bd5ad93dd843db8b">Weave Knowledge and Skills Together</SPAN></A><DIV id="tdfd98ca41979444f9bd5ad93dd843db8b">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Recognize_a_Common_Purpose.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd420954c1e104256a9095d18813adabb">Recognize a Common Purpose</SPAN></A><DIV id="tdd420954c1e104256a9095d18813adabb">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Work_Together.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3cf837dfdc474522b873ff30201dc060">Work Together</SPAN></A><DIV id="td3cf837dfdc474522b873ff30201dc060">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Copyright_and_Intellectual_Property_Policy.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7f0b362e63d045c39ca76b61ae6c6007">Copyright and Intellectual Property Policy</SPAN></A><DIV id="td7f0b362e63d045c39ca76b61ae6c6007">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Staff.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pdae52406e88445caa057b00a91cbe65b">Staff</SPAN></A><DIV id="tddae52406e88445caa057b00a91cbe65b">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='ContactUs_-_Form.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p48f0c8aa2df24f1f96edda752a1ae415">ContactUs - Form</SPAN></A><DIV id="td48f0c8aa2df24f1f96edda752a1ae415">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd3267ba683dfd45f092fb69b06e42044e')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Resources.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3267ba683dfd45f092fb69b06e42044e">Resources</SPAN></A><DIV id="d3267ba683dfd45f092fb69b06e42044e">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd580b714967fd435caefb1d21ed86ce0a')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Browse_by.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p580b714967fd435caefb1d21ed86ce0a">Browse by</SPAN></A><DIV id="d580b714967fd435caefb1d21ed86ce0a">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Assessments_Exams_Assignments.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pff798d5ff34946fdb74d9c55354d963f">Assessments/Exams/Assignments</SPAN></A><DIV id="tdff798d5ff34946fdb74d9c55354d963f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Cognitive_research.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p8623f30cdff644f8a3ae2fd9b9a78bbd">Cognitive research</SPAN></A><DIV id="td8623f30cdff644f8a3ae2fd9b9a78bbd">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Cooperative_Learning.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p5b311fe73b4a49c2926b92495f14758c">Cooperative Learning</SPAN></A><DIV id="td5b311fe73b4a49c2926b92495f14758c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Hybrid_Blended_Online.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p6a3edd040eb6473ba689c664e1345c82">Hybrid/Blended/Online</SPAN></A><DIV id="td6a3edd040eb6473ba689c664e1345c82">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Intergrating_Technology.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p5efc7eece18047ed81dca69f43879fa3">Intergrating Technology</SPAN></A><DIV id="td5efc7eece18047ed81dca69f43879fa3">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Learning_theories.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd35999a478b04e58a0621a0070f8ecce">Learning theories</SPAN></A><DIV id="tdd35999a478b04e58a0621a0070f8ecce">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Peer_Review.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pf4cf5221d52f4621bab74c5af4779f9f">Peer Review</SPAN></A><DIV id="tdf4cf5221d52f4621bab74c5af4779f9f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Self-Assessment.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p99415d1d2fc34803917b0f3ab12c544d">Self-Assessment</SPAN></A><DIV id="td99415d1d2fc34803917b0f3ab12c544d">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Simulations.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p619bb7f6ddf54251a98af3c4c9e0e3a8">Simulations</SPAN></A><DIV id="td619bb7f6ddf54251a98af3c4c9e0e3a8">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Rubics.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9409284b34924e49b2a0094dc1447d31">Rubics</SPAN></A><DIV id="td9409284b34924e49b2a0094dc1447d31">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Law_School_Survey_Results.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pfd7a6e17c9c543408abde89c43a85ff4">Law School Survey Results</SPAN></A><DIV id="tdfd7a6e17c9c543408abde89c43a85ff4">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='DU_Strategic_Plan.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4c06292dc78641199d6e80ccc07c6ebd">DU Strategic Plan</SPAN></A><DIV id="td4c06292dc78641199d6e80ccc07c6ebd">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd0dc4826462f2407389011118bd0f29d4')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Course_Portfolios.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0dc4826462f2407389011118bd0f29d4">Course Portfolios</SPAN></A><DIV id="d0dc4826462f2407389011118bd0f29d4">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Portfolio_Detail_-_David.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p2c417a9e666146ec8242d49181faaf47">Portfolio Detail - David</SPAN></A><DIV id="td2c417a9e666146ec8242d49181faaf47">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Submission_Form.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pcba377ed2eb446f085077fb266d9daa7">Submission Form</SPAN></A><DIV id="tdcba377ed2eb446f085077fb266d9daa7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Confirmation_Page.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p60117b8592a14c9b8794801a9b6c8989">Confirmation Page</SPAN></A><DIV id="td60117b8592a14c9b8794801a9b6c8989">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd312cfcf51c734572a3eb4d0d014b34f0')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Voices_from_the_Field.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p312cfcf51c734572a3eb4d0d014b34f0">Voices from the Field</SPAN></A><DIV id="d312cfcf51c734572a3eb4d0d014b34f0">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='interviewDetails.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0ddf236b0eae4626b2d2b7c7b5ba4d92">interviewDetails</SPAN></A><DIV id="td0ddf236b0eae4626b2d2b7c7b5ba4d92">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd9b7bb039f42e49fa9c5785add9186b11')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Blog.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9b7bb039f42e49fa9c5785add9186b11">Blog</SPAN></A><DIV id="d9b7bb039f42e49fa9c5785add9186b11">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Article_Detail.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p79267f1313644894bfa5074a291e803c">Article_Detail</SPAN></A><DIV id="td79267f1313644894bfa5074a291e803c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Editor_Profile.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p751d4a0a15cb4781b8877031766cf0d3">Editor Profile</SPAN></A><DIV id="td751d4a0a15cb4781b8877031766cf0d3">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Events.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9b55c1d79c9649048ff4d3764acdda7f">Events</SPAN></A><DIV id="td9b55c1d79c9649048ff4d3764acdda7f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'ddb6a653cbe44496ab54c3d53ef140db4')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A onclick="parent.mainFrame.location='Join_our_Groups_[phase_2].html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pdb6a653cbe44496ab54c3d53ef140db4">Join our Groups (phase 2)</SPAN></A><DIV id="ddb6a653cbe44496ab54c3d53ef140db4">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Faculty_Network_Directory.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p625a853a656f4b81932082200eae19bd">Faculty Network Directory</SPAN></A><DIV id="td625a853a656f4b81932082200eae19bd">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Faculty_Profile.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p8072acbb01044177a99a93b539a8b512">Faculty Profile</SPAN></A><DIV id="td8072acbb01044177a99a93b539a8b512">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="parent.mainFrame.location='Faculty_Network_Directory_Sign_Up.html'"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p2bc0cf16ebd74cc4bbed2e37285bf3d4">Faculty Network Directory Sign Up</SPAN></A><DIV id="td2bc0cf16ebd74cc4bbed2e37285bf3d4">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>
