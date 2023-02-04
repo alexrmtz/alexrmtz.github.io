@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 3: Accessibility Testing</title>
     <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
@@ -26,30 +28,45 @@
 
 <h3>Website Page Titles</h3>
 <p>In the web page markup, the < title > is within the < head > tag. Good page titles are particularly important for orientation, they help people know where they are and move between pages open in their browser tab. The first thing screen readers say when the user goes to a different web page is the page title.</p>
-<p>Results: <i class="bi bi-hand-thumbs-up-fill"></i> 10 pages on the CCC website were evaluated for clear, unique HTML page titles. Each page has descriptive HTML title values. However, we do suggest that the title values have to be formatted as “Page Title at CCC”, for example, "Groups at CCC" so that it's obvious to users using the assistive technologies what website page they are on. </p>
 
+<div class="alert alert-success" role="alert">
+<p>Results: <i class="bi bi-hand-thumbs-up-fill"></i> 10 pages on the CCC website were evaluated for clear, unique HTML page titles. Each page has descriptive HTML title values. However, we do suggest that the title values have to be formatted as “Page Title at CCC”, for example, "Groups at CCC" so that it's obvious to users using the assistive technologies what website page they are on. </p>
+</div>
 
 <h3>Image Text Alternatives</h3>
 <p>Image text alternatives ("alt text") (pictures, illustrations, charts, etc.) Text alternatives convey the purpose of an image, including pictures, illustrations, charts, etc. The alt attribute provides an alternative text for an image, if the user for some reason cannot view it. The reason can be a slow connection, an error with the image file, or if the user uses a screen reader.</p>
+<div class="alert alert-danger" role="alert">
 <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i> No photos on the Staff, Classes, or Groups pages had descriptive alt text. This means that people using assistive technologies would not know what the photo or graphic is communicating. We recommend that all photos and graphics have descriptive alt text. </p>
-
+</div>
 
 
 <h3>Text:</h3>
  Headings, Contrast Ratio ("color contrast") and Resizing Text should not only support visual aesthetics but also support the navigation and visibility of text content.
+
+ <div class="alert alert-success" role="alert">
 <p>Results - Headings  <i class="bi bi-hand-thumbs-up-fill"></i> We tested the Groups, Calendar and the Our Calling pages and headings tags are nested correctly. However, the CCC homepage has 3 H1 tags, there should only be one H1 per page because screen readers expect only one H1 tag. </p>
+</div>
 
+<div class="alert alert-success" role="alert">
 <p>Results - Contrast Ratio  <i class="bi bi-hand-thumbs-up-fill"></i> We tested the Groups, Calendar and Our Calling and there was strong color contrast because the pages are white and the heading titles are in black. The WAVE color contrast tester did flag the main navigation as a  color contrast issue because of the blue background and white text. Suggestion is to make the text a little larger or bold. </p>
+</div>
 
+<div class="alert alert-success" role="alert">
 <p>Results - Resizing Text  <i class="bi bi-hand-thumbs-up-fill"></i>The CCC website scales up text size using keyboard commands very well. Text was increased to 200% and readability remained comprehensible on a desktop and iPhone.</p>
+</div>
 
  <h3>Interaction:</h3>
  <p>Keyboard access and visual focus </i>  Many people cannot use a mouse and rely on a keyboard to interact with web pages. Keyboard focus should be clearly visible and should follow a logical order through the page elements. Visible keyboard focus could be a border or highlight. </p>
 
+ <div class="alert alert-danger" role="alert">
 <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i> Using only keyboard keys to navigate the CCC website was very difficult. We could not open the sub-pages in the main navigation using our keyboard keys. There was no <a href="https://www.w3schools.com/accessibility/accessibility_skip_links.php">Skip to Main</a> feature that allows keyword users to quickly skip to the main content section. Furthermore, Keyboard Focus was not obvious to us when we were using our tab and arrow keys. We recommend that the web team explore to make the CCC website more keyboard-only friendly.</p>
+</div>
 
+
+<div class="alert alert-success" role="alert">
 <p>Forms, labels, and errors (including Search fields)</p>
 <p>Results  <i class="bi bi-hand-thumbs-up-fill"></i>We tested the Give page because it has a form. Using only the keyboard, we were able to go to each form field and press submit. </p>
+</div>
 
  <h3>General:</h3>
  <p>Moving, Flashing, or Blinking Content</p>
@@ -59,7 +76,8 @@
  <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i><i class="bi bi-hand-thumbs-up-fill"></i> We tested to see if all CCC videos had closed captions and downloadable transcripts. The CCC homepage has a video without closed captions. The Calling page videos all had closed captions and the accuracy was high. We recommend that all CCC videos have closed captions and/or transcripts to allow people with hearing impairments to read or listen via assistive technologies. Closed caption remediation includes proper grammar, punctuation, and speaker name identification. </p>
 
  <p>Basic Structure Check: It helps you understand how some people "see" the web page differently. For this basic structure check, you look at the web page without images, styles, and layout.
-    Web pages are often designed with multiple columns, sections, colors, and other visual aspects that help organize information for people who see the page in its default display. However, some people do not see the page this way.</p>
+Web pages are often designed with multiple columns, sections, colors, and other visual aspects that help organize information for people who see the page in its default display. However, some people do not see the page this way.</p>
+
  <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i> For this test, we used WAVE to remove all CSS styles in order to see the CCC website without any visual styling. We tested the Classes page and noticed that this page is heavy on graphics without alt text and the "Alpha" class description comes up twice. Not sure why this is happening but this could be a problem for people using a screen reader. </p>
 
 <h3>In Summary</h3>
