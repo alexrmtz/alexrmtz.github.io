@@ -11,6 +11,8 @@
     <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="container"> 
 <h1>Accessibility Testing on Colorado Community Church (CCC)</h1>
 
 <p>
@@ -70,15 +72,22 @@
 
  <h3>General:</h3>
  <p>Moving, Flashing, or Blinking Content</p>
+ <div class="alert alert-success" role="alert">
  <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i><i class="bi bi-hand-thumbs-up-fill"></i> The CCC has an image carousel on the homepage that does not allow the user to stop the moving of images. The image gallery is not keyboard friendly. None of the photos have alt text. We recommend that the current image carousel is replaced with an <a href="https://www.w3.org/WAI/tutorials/carousels/">accessible image carousel</a>. No blinking or flashing content was located on the CCC website.</p>
+</div>
 
+ <div class="alert alert-success" role="alert">
  <p>Multimedia (video, audio) closed captions and transcripts</p>
  <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i><i class="bi bi-hand-thumbs-up-fill"></i> We tested to see if all CCC videos had closed captions and downloadable transcripts. The CCC homepage has a video without closed captions. The Calling page videos all had closed captions and the accuracy was high. We recommend that all CCC videos have closed captions and/or transcripts to allow people with hearing impairments to read or listen via assistive technologies. Closed caption remediation includes proper grammar, punctuation, and speaker name identification. </p>
+</div>
 
  <p>Basic Structure Check: It helps you understand how some people "see" the web page differently. For this basic structure check, you look at the web page without images, styles, and layout.
 Web pages are often designed with multiple columns, sections, colors, and other visual aspects that help organize information for people who see the page in its default display. However, some people do not see the page this way.</p>
 
- <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i> For this test, we used WAVE to remove all CSS styles in order to see the CCC website without any visual styling. We tested the Classes page and noticed that this page is heavy on graphics without alt text and the "Alpha" class description comes up twice. Not sure why this is happening but this could be a problem for people using a screen reader. </p>
+<div class="alert alert-danger" role="alert">
+<p>Results: <i class="bi bi-hand-thumbs-down-fill"></i> For this test, we used WAVE to remove all CSS styles in order to see the CCC website without any visual styling. We tested the Classes page and noticed that this page is heavy on graphics without alt text and the "Alpha" class description comes up twice. Not sure why this is happening but this could be a problem for people using a screen reader. </p>
+</div>
+ 
 
 <h3>In Summary</h3>
 <p>Thank you for taking the time to review our findings. We believe that most of the issues mentioned here can be resolved. Included below are some helpful articles on web accessibility.</p>
@@ -92,5 +101,7 @@ Web pages are often designed with multiple columns, sections, colors, and other 
 <li><a href="https://www.w3.org/WAI/test-evaluate/">Evaluating Web Accessibility Overview</a></li>
 </ul>
 
+
+</div> 
 </body>
 </html>
