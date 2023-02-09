@@ -16,6 +16,38 @@
     <h1>Charts</h1>
     <p>Charts are not just cool, they can communicate important information in a visual way to users. Because these charts are HTML and JavaScript based, they display very well on a website. </p>
 
+
+
+    <h2>Bar Chart</h2>
+    <canvas id="myMusic" style="width: 600px; max-width: 600px; display: block; height: 500px;" width="1200" height="600" class="chartjs-render-monitor"></canvas>
+
+    <script>
+    var xValues = ["Radiohead", "Nick Cave & the Bad Seeds", "David Bowie", "Other Artists"];
+    var yValues = [5,5,5,6];
+    var barColors = ["red", "green","blue","orange"];
+        
+        new Chart("myMusic", {
+          type: "bar",
+          
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Music I Own"
+            }
+          }
+        });
+        </script>
+    
+
+
     <h2>Doughnut Charts: </h2>
 
     <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
