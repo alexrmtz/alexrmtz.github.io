@@ -23,7 +23,7 @@
 
     <script>
     var xValues = ["Radiohead", "Nick Cave & the Bad Seeds", "David Bowie", "Other Artists"];
-    var yValues = [5,5,5,6];
+    var yValues = [15,25,35,6];
     var barColors = ["red", "green","blue","orange"];
         
         new Chart("myMusic", {
@@ -46,7 +46,32 @@
         });
         </script>
     
+    <h2>Bar Chart</h2>
+    <canvas id="myFirstChart" style="width:100%;max-width:600px"></canvas>
 
+    <script>
+    var xValues = ["September", "October", "November", "December", "January"];
+    var yValues = [90, 105, 88, 96, 79];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myFirstChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "LCPL Storytime Attendance 2022"
+        }
+      }
+    });
+    </script><br><br>
 
     <h2>Doughnut Charts: </h2>
 
