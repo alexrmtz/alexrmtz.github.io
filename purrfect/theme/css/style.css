@@ -135,6 +135,8 @@ a:hover {
   outline: none;
 }
 
+
+
 .heart a:link {
   content: " ";
   background-image: url('https://img.icons8.com/ios/1x/hearts.png');
