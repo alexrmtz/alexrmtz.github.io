@@ -73,7 +73,7 @@ h6, .h6 {
 }
 
 .section {
-  padding: 120px 0px;
+  padding: 20px 0px;
 }
 
 .section-sm {
@@ -132,6 +132,7 @@ a:hover {
   color: #f44336;
   text-decoration: none;
   outline: none;
+  transform: scale(1);
 }
 
 .bg-primary {
