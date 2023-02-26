@@ -133,8 +133,25 @@ a:hover {
   color: #f44336;
   text-decoration: none;
   outline: none;
-  transform: scale(1);
 }
+
+.heart a:link {
+  content: " ";
+  background-image: url('https://img.icons8.com/ios/1x/hearts.png');
+  outline: none;
+  height: 10px;
+  width: 10px;
+}
+
+
+.heart a:hover {
+  content: " ";
+  background-image: url('https://img.icons8.com/emoji/1x/sparkling-heart.png');
+  height: 10px;
+  width: 10px;
+}
+
+
 
 .bg-primary {
   background: #f44336 !important;
